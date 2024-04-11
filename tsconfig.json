@@ -16,9 +16,6 @@
       {
         "name": "next"
       },
-      {
-        "name": "@styled/typescript-styled-plugin"
-    }
     ],
     "paths": {
       "@/*": ["./src/*"]
