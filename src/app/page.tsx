@@ -1,6 +1,13 @@
 import { type FC } from "react";
 import styled from "styled-components";
 
+export const dynamic = "hogehoge";
+export const dynamicParams = 1;
+export const revalidate = "hogehoge";
+export const fetchCache = "hogehoge";
+export const runtime = "hogehoge";
+export const preferredRegion = 1;
+
 const StyledButton = styled.span`
   user-select: none;
   cursor: pointer;
