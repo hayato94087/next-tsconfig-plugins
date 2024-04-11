@@ -8,8 +8,14 @@ dependencies:
   next:
     specifier: 14.1.4
     version: 14.1.4(react-dom@18.2.0)(react@18.2.0)
+  styled-components:
+    specifier: ^6.1.8
+    version: 6.1.8(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
+  '@styled/typescript-styled-plugin':
+    specifier: ^1.0.1
+    version: 1.0.1
   '@types/node':
     specifier: ^20
     version: 20.0.0
@@ -57,6 +63,36 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.1
     dev: true
+
+  /@emmetio/abbreviation@2.3.3:
+    resolution: {integrity: sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==}
+    dependencies:
+      '@emmetio/scanner': 1.0.4
+    dev: true
+
+  /@emmetio/css-abbreviation@2.1.8:
+    resolution: {integrity: sha512-s9yjhJ6saOO/uk1V74eifykk2CBYi01STTK3WlXWGOepyKa23ymJ053+DNQjpFcy1ingpaO7AxCcwLvHFY9tuw==}
+    dependencies:
+      '@emmetio/scanner': 1.0.4
+    dev: true
+
+  /@emmetio/scanner@1.0.4:
+    resolution: {integrity: sha512-IqRuJtQff7YHHBk4G8YZ45uB9BaAGcwQeVzgj/zj8/UdOhtQpEIupUhSk8dys6spFIWVZVeK20CzGEnqR5SbqA==}
+    dev: true
+
+  /@emotion/is-prop-valid@1.2.1:
+    resolution: {integrity: sha512-61Mf7Ufx4aDxx1xlDeOm8aFFigGHE4z+0sKCa+IHCeZKiyP9RLD0Mmx7m8b9/Cf37f7NAvQOOJAbQQGVr5uERw==}
+    dependencies:
+      '@emotion/memoize': 0.8.1
+    dev: false
+
+  /@emotion/memoize@0.8.1:
+    resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
+    dev: false
+
+  /@emotion/unitless@0.8.0:
+    resolution: {integrity: sha512-VINS5vEYAscRl2ZUDiT3uMPlrFQupiKgHz5AA4bCH1miKBg4qtwkim1qPmJj/4WG6TreYMY111rEFsjupcOKHw==}
+    dev: false
 
   /@eslint/eslintrc@1.4.1:
     resolution: {integrity: sha512-XXrH9Uarn0stsyldqDYq8r++mROmWRI1xKMXa640Bb//SY1+ECYX6VzT6Lcx5frD0V30XieqJ0oX9I2Xj5aoMA==}
@@ -255,6 +291,16 @@ packages:
     resolution: {integrity: sha512-hw437iINopmQuxWPSUEvqE56NCPsiU8N4AYtfHmJFckclktzK9YQJieD3XkDCDH4OjL+C7zgPUh73R/nrcHrqw==}
     dev: true
 
+  /@styled/typescript-styled-plugin@1.0.1:
+    resolution: {integrity: sha512-4n9uYJiui4hqGIEMvs/u7sfjbs1/84shYt2Fxcm0JQbvUGfuFhtsqVG5y1hSvw5kTwdpIe4rbXMMOwVHcuAh1g==}
+    dependencies:
+      '@vscode/emmet-helper': 2.9.2
+      typescript-template-language-service-decorator: 2.3.2
+      vscode-css-languageservice: 6.2.13
+      vscode-languageserver-textdocument: 1.0.11
+      vscode-languageserver-types: 3.17.5
+    dev: true
+
   /@swc/helpers@0.5.2:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
     dependencies:
@@ -290,6 +336,10 @@ packages:
   /@types/scheduler@0.23.0:
     resolution: {integrity: sha512-YIoDCTH3Af6XM5VuwGG/QL/CJqga1Zm3NkU3HZ4ZHK2fRMPYP1VczsTUqtsf43PH/iJNVlPHAo2oWX7BSdB2Hw==}
     dev: true
+
+  /@types/stylis@4.2.0:
+    resolution: {integrity: sha512-n4sx2bqL0mW1tvDf/loQ+aMX7GQD3lc3fkCMC55VFNDu/vBOabO+LTIeXKM14xK0ppk5TUGcWRjiSpIlUpghKw==}
+    dev: false
 
   /@typescript-eslint/parser@6.21.0(eslint@8.0.0)(typescript@5.0.2):
     resolution: {integrity: sha512-tbsV1jPne5CkFQCgPBcDOt30ItF7aJoZL997JSF7MhGQqOeT3svWRYxiqlfA5RUdlHN6Fi+EI9bxqbdyAUZjYQ==}
@@ -353,6 +403,20 @@ packages:
     dependencies:
       '@typescript-eslint/types': 6.21.0
       eslint-visitor-keys: 3.4.3
+    dev: true
+
+  /@vscode/emmet-helper@2.9.2:
+    resolution: {integrity: sha512-MaGuyW+fa13q3aYsluKqclmh62Hgp0BpKIqS66fCxfOaBcVQ1OnMQxRRgQUYnCkxFISAQlkJ0qWWPyXjro1Qrg==}
+    dependencies:
+      emmet: 2.4.7
+      jsonc-parser: 2.3.1
+      vscode-languageserver-textdocument: 1.0.11
+      vscode-languageserver-types: 3.17.5
+      vscode-uri: 2.1.2
+    dev: true
+
+  /@vscode/l10n@0.0.18:
+    resolution: {integrity: sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ==}
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.11.3):
@@ -639,6 +703,10 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  /camelize@1.0.1:
+    resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==}
+    dev: false
+
   /caniuse-lite@1.0.30001608:
     resolution: {integrity: sha512-cjUJTQkk9fQlJR2s4HMuPMvTiRggl0rAVMtthQuyOlDWuqHXqN8azLq+pi8B2TjwKJ32diHjUqRIKeFX4z1FoA==}
 
@@ -702,11 +770,28 @@ packages:
       which: 2.0.2
     dev: true
 
+  /css-color-keywords@1.0.0:
+    resolution: {integrity: sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg==}
+    engines: {node: '>=4'}
+    dev: false
+
+  /css-to-react-native@3.2.0:
+    resolution: {integrity: sha512-e8RKaLXMOFii+02mOlqwjbD00KSEKqblnpO9e++1aXS1fPQOpS1YoqdVHBqPjHNoxeF2mimzVqawm2KCbEdtHQ==}
+    dependencies:
+      camelize: 1.0.1
+      css-color-keywords: 1.0.0
+      postcss-value-parser: 4.2.0
+    dev: false
+
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
     dev: true
+
+  /csstype@3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+    dev: false
 
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
@@ -828,6 +913,13 @@ packages:
 
   /electron-to-chromium@1.4.733:
     resolution: {integrity: sha512-gUI9nhI2iBGF0OaYYLKOaOtliFMl+Bt1rY7VmEjwxOxqoYLub/D9xmduPEhbw2imE6gYkJKhIE5it+KE2ulVxQ==}
+    dev: true
+
+  /emmet@2.4.7:
+    resolution: {integrity: sha512-O5O5QNqtdlnQM2bmKHtJgyChcrFMgQuulI+WdiOw2NArzprUqqxUW6bgYtKvzKgrsYpuLWalOkdhNP+1jluhCA==}
+    dependencies:
+      '@emmetio/abbreviation': 2.3.3
+      '@emmetio/css-abbreviation': 2.1.8
     dev: true
 
   /emoji-regex@8.0.0:
@@ -1801,6 +1893,10 @@ packages:
       minimist: 1.2.8
     dev: true
 
+  /jsonc-parser@2.3.1:
+    resolution: {integrity: sha512-H8jvkz1O50L3dMZCsLqiuB2tA7muqbSg1AtGEkN0leAqGjsUzDJir3Zwr02BhqdcITPg3ei3mZ+HjMocAknhhg==}
+    dev: true
+
   /jsx-ast-utils@3.3.5:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
@@ -2200,7 +2296,6 @@ packages:
 
   /postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-    dev: true
 
   /postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
@@ -2420,6 +2515,10 @@ packages:
       has-property-descriptors: 1.0.2
     dev: true
 
+  /shallowequal@1.1.0:
+    resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
+    dev: false
+
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -2548,6 +2647,26 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /styled-components@6.1.8(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PQ6Dn+QxlWyEGCKDS71NGsXoVLKfE1c3vApkvDYS5KAK+V8fNWGhbSUEo9Gg2iaID2tjLXegEW3bZDUGpofRWw==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      react: '>= 16.8.0'
+      react-dom: '>= 16.8.0'
+    dependencies:
+      '@emotion/is-prop-valid': 1.2.1
+      '@emotion/unitless': 0.8.0
+      '@types/stylis': 4.2.0
+      css-to-react-native: 3.2.0
+      csstype: 3.1.2
+      postcss: 8.4.31
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      shallowequal: 1.1.0
+      stylis: 4.3.1
+      tslib: 2.5.0
+    dev: false
+
   /styled-jsx@5.1.1(react@18.2.0):
     resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
     engines: {node: '>= 12.0.0'}
@@ -2563,6 +2682,10 @@ packages:
     dependencies:
       client-only: 0.0.1
       react: 18.2.0
+    dev: false
+
+  /stylis@4.3.1:
+    resolution: {integrity: sha512-EQepAV+wMsIaGVGX1RECzgrcqRRU/0sYOHkeLsZ3fzHaHXZy4DaOOX0vOlGQdlsjkh3mFHAIlVimpwAs4dslyQ==}
     dev: false
 
   /sucrase@3.35.0:
@@ -2677,6 +2800,10 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
+  /tslib@2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
+    dev: false
+
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: false
@@ -2737,6 +2864,10 @@ packages:
       possible-typed-array-names: 1.0.0
     dev: true
 
+  /typescript-template-language-service-decorator@2.3.2:
+    resolution: {integrity: sha512-hN0zNkr5luPCeXTlXKxsfBPlkAzx86ZRM1vPdL7DbEqqWoeXSxplACy98NpKpLmXsdq7iePUzAXloCAoPKBV6A==}
+    dev: true
+
   /typescript@5.0.2:
     resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
     engines: {node: '>=12.20'}
@@ -2775,6 +2906,31 @@ packages:
 
   /v8-compile-cache@2.4.0:
     resolution: {integrity: sha512-ocyWc3bAHBB/guyqJQVI5o4BZkPhznPYUG2ea80Gond/BgNWpap8TOmLSeeQG7bnh2KMISxskdADG59j7zruhw==}
+    dev: true
+
+  /vscode-css-languageservice@6.2.13:
+    resolution: {integrity: sha512-2rKWXfH++Kxd9Z4QuEgd1IF7WmblWWU7DScuyf1YumoGLkY9DW6wF/OTlhOyO2rN63sWHX2dehIpKBbho4ZwvA==}
+    dependencies:
+      '@vscode/l10n': 0.0.18
+      vscode-languageserver-textdocument: 1.0.11
+      vscode-languageserver-types: 3.17.5
+      vscode-uri: 3.0.8
+    dev: true
+
+  /vscode-languageserver-textdocument@1.0.11:
+    resolution: {integrity: sha512-X+8T3GoiwTVlJbicx/sIAF+yuJAqz8VvwJyoMVhwEMoEKE/fkDmrqUgDMyBECcM2A2frVZIUj5HI/ErRXCfOeA==}
+    dev: true
+
+  /vscode-languageserver-types@3.17.5:
+    resolution: {integrity: sha512-Ld1VelNuX9pdF39h2Hgaeb5hEZM2Z3jUrrMgWQAu82jMtZp7p3vJT3BzToKtZI7NgQssZje5o0zryOrhQvzQAg==}
+    dev: true
+
+  /vscode-uri@2.1.2:
+    resolution: {integrity: sha512-8TEXQxlldWAuIODdukIb+TR5s+9Ds40eSJrw+1iDDA9IFORPjMELarNQE3myz5XIkWWpdprmJjm1/SxMlWOC8A==}
+    dev: true
+
+  /vscode-uri@3.0.8:
+    resolution: {integrity: sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==}
     dev: true
 
   /which-boxed-primitive@1.0.2:
